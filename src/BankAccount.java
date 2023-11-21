@@ -15,7 +15,7 @@ public class BankAccount {
         String type = reading.nextLine();
 
         System.out.println("***********************");
-        System.out.println("CLIENTE:");
+        System.out.println("CUSTOMER:");
         System.out.println("name: " +name);
         System.out.println("Account Type: " + type);
         System.out.println("Your balance: " + balance);
@@ -43,11 +43,11 @@ public class BankAccount {
                 System.out.println("Current Balance: " + balance);
             }else if (option == 2) {
                 System.out.println("Type the amount for transfer: " );
-                double valor = reading.nextDouble();
+                double value = reading.nextDouble();
                 if (valor > balance) {
                     System.out.println("You don't have the amount for transfer: ");
                 }else {
-                    balance -= valor;
+                    balance -= value;
                     System.out.println("Successful Transfer: ");
                 }
             } else if (option == 3) {
